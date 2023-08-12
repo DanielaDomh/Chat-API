@@ -13,12 +13,14 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan("tiny"));
 
+app.use("/", express.static("public"));
+
 apiRoutes(app);
 
 //Ruta de prueba
-app.get('/', (req,res) => {
-res.send('Servidor funcionando');
-});
+// app.get('/', (req,res) => {
+// res.send('Servidor funcionando');
+// });
 
 //Middleware de error
 errorRoutes(app);
