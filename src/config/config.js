@@ -27,7 +27,7 @@ module.exports = {
     "host": process.env.HOST,
     "port": process.env.PORT,
     "dialect": "postgres",
-    "dialectOptions": {ssl: { require: true, rejectUnauthorized: false }}
+    "dialectOptions": {ssl: { required: true, rejectUnauthorized: false }}
  
   }
 }
